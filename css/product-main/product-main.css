@@ -1,0 +1,9 @@
+.product-main{
+    margin: 20px auto 5px;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
