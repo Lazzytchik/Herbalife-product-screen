@@ -1,3 +1,8 @@
 .product-main__arrow{
 
 }
+
+.product-main__arrow:hover{
+    /* transform: scale(1.2, 1.2);
+    transition-duration: 0.3s; */
+}
