@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAQ,iDAAsC;AACtC,4EAAiE;AACjE,sEAA2D;AAC3D,oEAAyD",
+"mappings": "AAAQ,8DAAmD;AACnD,yFAA8E;AAC9E,mFAAwE;AACxE,iFAAsE;AACtE,2FAAgF;AAChF,6EAAkE;AAClE,2EAAgE;AAChE,6FAAkF;AAClF,iFAAsE;AACtE,6EAAkE;AAClE,gDAAqC;AACrC,6EAAkE;AAClE,mEAAwD;AACxD,iDAAsC;AACtC,6EAAkE;AAClE,2EAAmE;AAE3E,aAAa;EACX,WAAW,EAAE,QAAQ;;AAEvB,IAAI;EACF,MAAM,EAAE,CAAC",
 "sources": ["max-life.sass"],
 "names": [],
 "file": "max-life.css"
