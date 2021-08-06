@@ -1,0 +1,21 @@
+.presentation__to-main-page{
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 200px;
+}
+
+.presentation__to-main-page:hover{
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.2));
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5));
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.presentation__to-main-page h3{
+    font-size: 24px;
+}

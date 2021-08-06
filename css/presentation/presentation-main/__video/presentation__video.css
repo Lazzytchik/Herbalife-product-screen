@@ -1,0 +1,9 @@
+.presentation__video{
+    margin: 0 auto 5px;
+    width: 90%;
+}
+
+.presentation__video video{
+    width: 100%;
+    height: auto;
+}

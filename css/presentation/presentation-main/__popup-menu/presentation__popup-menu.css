@@ -1,0 +1,11 @@
+.presentation__popup-menu{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    text-align: center;
+    backdrop-filter: brightness(50%);
+
+    display: none;
+}

@@ -1,0 +1,18 @@
+.presentation__to-ingredients{
+    color: white;
+    margin: 500px auto 0;
+    width: 700px;
+    transition-duration: 0.3s;
+}
+
+.presentation__to-ingredients:hover{
+    -webkit-filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.2));
+    filter: drop-shadow(0px 0px 8px rgba(255, 255, 255, 0.5));
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.presentation__to-ingredients h2{
+    font-size: 50px;
+    margin-top: 10px;
+}
