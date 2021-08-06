@@ -1,8 +1,9 @@
 .presentation__socials{
-    margin-top: 100px;
+    margin: 80px auto 0;
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 500px;
 }

@@ -1,11 +1,13 @@
 .presentation__popup-menu{
     position: absolute;
     top: 0;
-    left: 5%;
-    right: 5%;
+    left: 0;
+    right: 0;
     bottom: 0;
     text-align: center;
-    backdrop-filter: brightness(50%);
+    backdrop-filter: brightness(20%);
+}
 
+.presentation__popup-menu--hidden{
     display: none;
 }
