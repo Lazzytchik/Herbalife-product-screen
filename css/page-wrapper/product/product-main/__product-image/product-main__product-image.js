@@ -28,9 +28,10 @@ async function canScale(canImage){
 }
 
 function moveCan(can){
+    can.style.transitionDuration = '1s'
     can.style.position = 'relative';
     can.style.zIndex = '10';
-    can.style.transform = 'translate(100px, 400px)';
+    can.style.transform = 'translate(0, 400px)';
     canScale(can);
 }
 

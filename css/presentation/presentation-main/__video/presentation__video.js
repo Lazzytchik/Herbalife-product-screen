@@ -1,6 +1,5 @@
-$(document).ready(function (){
+$('.presentation').ready(function (){
     let player;
-    let menu = document.getElementsByClassName('presentation__popup-menu');
 
     window.YT.ready(function() {
         onYouTubeIframeAPIReady()
@@ -12,7 +11,14 @@ $(document).ready(function (){
             width: '100%',
             videoId: 'rhUSXegw6NY',
             host: 'https://www.youtube.com',
-            playerVars: { 'autoplay': 0, 'controls': 1, 'rel': 0, 'modestbranding': 1, 'iv_load_policy': 2 },
+            playerVars: {
+                'autoplay': 1,
+                'controls': 1,
+                'rel': 0,
+                'modestbranding': 1,
+                'iv_load_policy': 2,
+                'enablejsapi': 1
+            },
             events: {
                 'onReady': onPlayerReady,
                 'onStateChange': onPlayerStateChange
@@ -20,8 +26,12 @@ $(document).ready(function (){
         });
     }
 
+    async function onCall(){
+        player.playVideo();
+    }
+
     function onPlayerReady(event) {
-        event.target.playVideo();
+        onCall();
     }
 
     function onPlayerStateChange(event) {

@@ -1,7 +1,9 @@
 .product-main__title{
-    margin-left: 130px;
+    margin-left: 100px;
+
+    padding-right: 100px;
 }
 
 .product-main__title h1{
-    font-size: 60px;
+    font-size: 54px;
 }
