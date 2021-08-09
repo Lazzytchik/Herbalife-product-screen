@@ -2,3 +2,7 @@
     height: 1000px;
     /*display: none;*/
 }
+
+.product--blurred{
+    backdrop-filter: blur(8px);
+}

@@ -27,6 +27,8 @@ $(document).ready(function (){
     function onPlayerStateChange(event) {
         if(event.data === 0) {
             $('.presentation__popup-menu').toggleClass('presentation__popup-menu--hidden');
+            player.seekTo(0);
+            player.pauseVideo();
         }
     }
 })

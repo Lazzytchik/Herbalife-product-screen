@@ -23,6 +23,7 @@
 @import url(../css/presentation/presentation-main/__video/presentation__video.css);
 @import url(../css/presentation/presentation-main/__popup-menu/presentation__popup-menu.css);
 @import url(../css/presentation/presentation-main/__back/presentation__back.css);
+@import url(../css/presentation/presentation-main/__back-title/presentation__back-title.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 p, h1, h2, h3 {
   font-family: "Roboto"; }
