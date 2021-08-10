@@ -15,7 +15,7 @@ $(document).ready(function(){
         blurAll();
         let canImage = document.getElementsByClassName('product-main__product-image')[0];
 
-        $(canImage).one('click', () => animate(canImage));
+        //$(canImage).one('click', () => animate(canImage));
     }
 
 });

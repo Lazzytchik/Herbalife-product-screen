@@ -1,3 +1,5 @@
+let clicked = false;
+
 $(document).ready(function (){
     // Little Canvas things
     let canvas = document.getElementsByClassName('powder__canvas')[0],
@@ -141,13 +143,27 @@ $(document).ready(function (){
     let canImage = document.getElementsByClassName('product-main__product-image')[0];
 
     $(canImage).one('click', () => bindAction());
+    $(canImage).click(function (){
+        bindAction()
+    })
 
     async function bindAction(){
-        animate(canImage);
+        if (!clicked){
+            clicked = true;
+            animate(canImage);
 
-        await sleep(4000);
-        $(".powder__canvas").toggleClass('powder__canvas--hidden');
-        frame();
-        initParticles(config.particleNumber);
+            await sleep(4000);
+            $(".powder__canvas").toggleClass('powder__canvas--hidden');
+            console.log('jey');
+            frame();
+            initParticles(config.particleNumber);
+
+            await sleep(2500);
+            $(".powder__canvas").toggleClass('powder__canvas--hidden');
+            cleanUpArray();
+
+            clicked = false;
+        }
+
     }
 })

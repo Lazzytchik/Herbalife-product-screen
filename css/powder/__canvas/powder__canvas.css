@@ -1,5 +1,6 @@
 .powder__canvas{
-
+    width: 1920px;
+    height: 1080px;
 }
 
 .powder__canvas--hidden{
