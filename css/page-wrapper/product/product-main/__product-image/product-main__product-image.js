@@ -18,6 +18,7 @@ async function canScale(canImage){
     function scaleFrame(){
         if (scale >= 10){
             clearInterval(scaleId);
+            enableScroll();
             $('.presentation').toggleClass('presentation--hidden');
             $('.page-wrapper').toggleClass('page-wrapper--hidden');
         } else{
@@ -74,12 +75,29 @@ function animate(canImage){
     scale = 1;
 
     blurAll();
+    disableScroll();
     openCanLid(-220, canImage);
 }
 
-$(document).ready(function (){
-    let canImage = document.getElementsByClassName('product-main__product-image')[0];
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
 
-    $(canImage).one('click', () => animate(canImage));
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
+
+
+$(document).ready(function (){
+    //let canImage = document.getElementsByClassName('product-main__product-image')[0];
+
+    //$(canImage).one('click', () => animate(canImage));
 
 })

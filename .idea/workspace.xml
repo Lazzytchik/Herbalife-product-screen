@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -51,11 +51,24 @@
       <workItem from="1628072841657" duration="12055000" />
       <workItem from="1628155688968" duration="24814000" />
       <workItem from="1628237841090" duration="7084000" />
-      <workItem from="1628504733024" duration="12799000" />
+      <workItem from="1628504733024" duration="14159000" />
+      <workItem from="1628589591989" duration="11011000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/css/page-wrapper/product/product-main/__product-image/product-main__product-image.js</url>
+          <line>13</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
