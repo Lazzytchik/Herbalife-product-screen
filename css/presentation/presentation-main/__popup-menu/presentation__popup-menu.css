@@ -6,6 +6,8 @@
     bottom: 0;
     text-align: center;
     backdrop-filter: brightness(20%);
+
+    height: 920px;
 }
 
 .presentation__popup-menu--hidden{

@@ -18,9 +18,9 @@ async function canScale(canImage){
     function scaleFrame(){
         if (scale >= 10){
             clearInterval(scaleId);
-            enableScroll();
             $('.presentation').toggleClass('presentation--hidden');
             $('.page-wrapper').toggleClass('page-wrapper--hidden');
+            //enableScroll();
         } else{
             scale += 0.05;
             canImage.style.transform = trans + 'scale('+scale+','+scale+')'
@@ -77,21 +77,6 @@ function animate(canImage){
     blurAll();
     disableScroll();
     openCanLid(-220, canImage);
-}
-
-function disableScroll() {
-    // Get the current page scroll position
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-
-        // if any scroll is attempted, set this to the previous value
-        window.onscroll = function() {
-            window.scrollTo(scrollLeft, scrollTop);
-        };
-}
-
-function enableScroll() {
-    window.onscroll = function() {};
 }
 
 

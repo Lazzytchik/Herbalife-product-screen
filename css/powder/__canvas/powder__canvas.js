@@ -11,8 +11,8 @@ $(document).ready(function (){
 
 // Configuration, Play with these
     let config = {
-        particleNumber: 1000,
-        maxParticleSize: 80,
+        particleNumber: 2000,
+        maxParticleSize: 40,
         maxSpeed: 8,
         colorVariation: 50
     };
@@ -144,7 +144,7 @@ $(document).ready(function (){
 
     $(canImage).one('click', () => bindAction());
     $(canImage).click(function (){
-        bindAction()
+        bindAction();
     })
 
     async function bindAction(){
@@ -152,15 +152,24 @@ $(document).ready(function (){
             clicked = true;
             animate(canImage);
 
+
             await sleep(4000);
             $(".powder__canvas").toggleClass('powder__canvas--hidden');
             console.log('jey');
             frame();
             initParticles(config.particleNumber);
 
-            await sleep(2500);
+            onCall();
+            await sleep(4000);
+            console.log('awaiyed');
+            //playFullscreen();
+
+
             $(".powder__canvas").toggleClass('powder__canvas--hidden');
             cleanUpArray();
+            enableScroll();
+
+
 
             clicked = false;
         }
