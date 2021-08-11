@@ -1,0 +1,8 @@
+.ingredients__names{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    height: 500px;
+}

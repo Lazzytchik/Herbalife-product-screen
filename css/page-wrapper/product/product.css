@@ -1,5 +1,7 @@
 .product{
-    height: 1000px;
+    height: auto;
+    margin: auto;
+    max-width: 1920px;
     /*display: none;*/
 }
 

@@ -1,0 +1,12 @@
+.ingredients__hint{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+
+.ingredients__hint img{
+    transform: translate(-80px, 30px);
+}

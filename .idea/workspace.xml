@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -38,6 +38,11 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\PM Projects\Herbalife-product-screen\css\ingredients" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +58,7 @@
       <workItem from="1628237841090" duration="7084000" />
       <workItem from="1628504733024" duration="14159000" />
       <workItem from="1628589591989" duration="13307000" />
-      <workItem from="1628672685381" duration="7094000" />
+      <workItem from="1628672685381" duration="24308000" />
     </task>
     <servers />
   </component>
