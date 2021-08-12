@@ -1,8 +1,9 @@
 .ingredients__number-image{
-    transition-duration: 700ms;
 }
 
 .ingredients__number-image--inverted{
-    transition-duration: 700ms;
     filter: grayscale(1) brightness(1000%);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.7s;
 }

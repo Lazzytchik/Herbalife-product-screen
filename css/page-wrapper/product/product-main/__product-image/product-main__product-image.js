@@ -18,7 +18,7 @@ async function canScale(canImage){
     function scaleFrame(){
         if (scale >= 10){
             clearInterval(scaleId);
-            $('.presentation').toggleClass('presentation--hidden');
+            $('.ingredients').toggleClass('ingredients--hidden');
             $('.page-wrapper').toggleClass('page-wrapper--hidden');
             //enableScroll();
         } else{

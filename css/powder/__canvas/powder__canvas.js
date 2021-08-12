@@ -1,8 +1,20 @@
 let clicked = false;
+let canvas;
+let config;
+let colorPalette;
+//let particles;
+let drawBg;
+let Particle;
+let colorVariation;
+let updateParticleModel;
+let drawParticle;
+let cleanUpArray;
+let initParticles;
+let frame;
 
 $(document).ready(function (){
     // Little Canvas things
-    let canvas = document.getElementsByClassName('powder__canvas')[0],
+    canvas = document.getElementsByClassName('powder__canvas')[0],
         ctx = canvas.getContext('2d');
 
 // Set Canvas to be window size
@@ -10,7 +22,7 @@ $(document).ready(function (){
     canvas.height = window.innerHeight;
 
 // Configuration, Play with these
-    let config = {
+    config = {
         particleNumber: 2000,
         maxParticleSize: 40,
         maxSpeed: 8,
@@ -18,7 +30,7 @@ $(document).ready(function (){
     };
 
 // Colors
-    let colorPalette = {
+    colorPalette = {
         bg: {r:12,g:9,b:29},
         matter: [
             {r:150,g:185,b:78}, // darkPRPL
@@ -42,7 +54,7 @@ $(document).ready(function (){
     };
 
 // Particle Constructor
-    let Particle = function (x, y) {
+    Particle = function (x, y) {
         // X Coordinate
         this.x = x || Math.round(Math.random() * canvas.width);
         // Y Coordinate
@@ -60,7 +72,7 @@ $(document).ready(function (){
 // Provides some nice color variation
 // Accepts an rgba object
 // returns a modified rgba object or a rgba string if true is passed in for argument 2
-    let colorVariation = function (color, returnString) {
+    colorVariation = function (color, returnString) {
         let r,g,b,a, variation;
         r = Math.round(color.r);
         g = Math.round(color.g);
@@ -74,7 +86,7 @@ $(document).ready(function (){
     };
 
 // Used to find the rocks next point in space, accounting for speed and direction
-    let updateParticleModel = function (p) {
+    updateParticleModel = function (p) {
         let a = 180 - (p.d + 90); // find the 3rd angle
         p.d > 0 && p.d < 180 ? p.x += p.s * Math.sin(p.d) / Math.sin(p.s) : p.x -= p.s * Math.sin(p.d) / Math.sin(p.s);
         p.d > 90 && p.d < 270 ? p.y += p.s * Math.sin(a) / Math.sin(p.s) : p.y -= p.s * Math.sin(a) / Math.sin(p.s);
@@ -83,7 +95,7 @@ $(document).ready(function (){
 
 // Just the function that physically draws the particles
 // Physically? sure why not, physically.
-    let drawParticle = function (x, y, r, c) {
+    drawParticle = function (x, y, r, c) {
         ctx.beginPath();
         ctx.fillStyle = c;
         ctx.arc(x, y, r, 0, 2*Math.PI, false);
@@ -92,14 +104,14 @@ $(document).ready(function (){
     };
 
 // Remove particles that aren't on the canvas
-    let cleanUpArray = function () {
+    cleanUpArray = function () {
         particles = particles.filter((p) => {
             return (p.x > -100 && p.y > -100);
         });
     };
 
 
-    let initParticles = function (numParticles, x, y) {
+    initParticles = function (numParticles, x, y) {
         for (let i = 0; i < numParticles; i++) {
             particles.push(new Particle(x, y));
         }
@@ -120,7 +132,7 @@ $(document).ready(function (){
 
 
 // Our Frame function
-    let frame = function () {
+    frame = function () {
         // Draw background first
         drawBg(ctx, colorPalette.bg);
         // Update Particle models to new position
@@ -152,24 +164,20 @@ $(document).ready(function (){
             clicked = true;
             animate(canImage);
 
-
             await sleep(4000);
             $(".powder__canvas").toggleClass('powder__canvas--hidden');
             console.log('jey');
             frame();
             initParticles(config.particleNumber);
 
-            onCall();
+            //onCall();
             await sleep(4000);
             console.log('awaiyed');
             //playFullscreen();
 
-
             $(".powder__canvas").toggleClass('powder__canvas--hidden');
             cleanUpArray();
             enableScroll();
-
-
 
             clicked = false;
         }

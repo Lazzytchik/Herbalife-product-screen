@@ -13,6 +13,11 @@
     font-weight: bold;
 }
 
+.ingredients__names-item--inverted{
+    color: #78BE20;
+    cursor: pointer;
+}
+
 .ingredients__names-item img{
     max-width: 24px;
     max-height: 24px;

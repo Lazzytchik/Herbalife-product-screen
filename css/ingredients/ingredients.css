@@ -13,3 +13,7 @@
     background-origin: border-box;
     background-position: center;
 }
+
+.ingredients--hidden{
+    display: none;
+}

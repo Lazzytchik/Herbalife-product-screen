@@ -9,4 +9,5 @@
 
 .ingredients__number--inverted{
     color: #78BE20;
+    cursor: pointer;
 }
