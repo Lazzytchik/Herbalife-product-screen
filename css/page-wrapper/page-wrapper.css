@@ -4,6 +4,8 @@
     background-size: 100%;
     width: 100%;
     height: auto;
+
+    display: none;
 }
 
 .page-wrapper--hidden{

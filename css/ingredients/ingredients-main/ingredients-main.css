@@ -1,3 +1,9 @@
 .ingredients-main{
-    margin: 40px 40px 40px 40px;
+    margin: 0 auto 35px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 1840px;
 }

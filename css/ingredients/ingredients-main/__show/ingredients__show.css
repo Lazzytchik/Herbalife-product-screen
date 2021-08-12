@@ -1,3 +1,10 @@
 .ingredients__show{
-    /*color: #78BE20;*/
+    position: relative;
+    z-index: 4;
+    background-image: url("../../../../img/ingredients.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 1200px;
+    height: 900px;
 }

@@ -8,4 +8,12 @@
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ingredients__names-item img{
+    max-width: 24px;
+    max-height: 24px;
 }

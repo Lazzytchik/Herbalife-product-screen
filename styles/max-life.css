@@ -19,6 +19,7 @@
 @import url(../css/ingredients/ingredients.css);
 @import url(../css/ingredients/ingredients-main/ingredients-main.css);
 @import url(../css/ingredients/ingredients-main/__description/ingredients__description.css);
+@import url(../css/ingredients/ingredients-main/__show/ingredients__show.css);
 @import url(../css/ingredients/ingredients-main/__names/ingredients__names.css);
 @import url(../css/ingredients/ingredients-main/__names-item/ingredients__names-item.css);
 @import url(../css/ingredients/ingredients-main/__socials/ingredients__socials.css);
@@ -37,6 +38,10 @@
 @import url(../css/presentation/presentation-main/__popup-menu/presentation__popup-menu.css);
 @import url(../css/presentation/presentation-main/__back/presentation__back.css);
 @import url(../css/presentation/presentation-main/__back-title/presentation__back-title.css);
+@import url(../css/ingredients/ingredients-main/__number/ingredients__number.css);
+@import url(../css/ingredients/ingredients-main/__number-image/ingredients__number-image.css);
+@import url(../css/ingredients/ingredients-main/__numbers-container/numbers/numbers.css);
+@import url(../css/ingredients/ingredients-main/__numbers-container/ingredients__numbers-container.css);
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 p, h1, h2, h3 {
   font-family: "Roboto"; }
