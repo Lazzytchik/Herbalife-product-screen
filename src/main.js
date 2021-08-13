@@ -1,3 +1,15 @@
 let videos = new Map();
 videos.set('1', '8pslK-vN2ag');
 videos.set('2', 'p9c_I3fsMgk');
+videos.set('3', 'aM4FXUAG6q0');
+videos.set('4', 'PAsBvOz__v8');
+videos.set('5', 'dXsr1Fx2ZTI');
+videos.set('6', 'otP_GDMzYxk');
+videos.set('7', '2CrbIFz7SU4');
+videos.set('8', 'AS3ELLNAbuQ');
+videos.set('9', '_9SS3F2RKhQ');
+videos.set('10', 'wrcruD5R57M');
+videos.set('11', 'sbjUW9Y3ABo');
+videos.set('12', 'TDcrWThdyiM');
+videos.set('13', 'O9VGHBljlVM');
+videos.set('14', 'kDb7F4pnl-4');

@@ -9,6 +9,7 @@ let posOffsetY = 90;
 let posOffsetX = 37;
 let angle = 0;
 let scale = 1;
+let clicked = false;
 
 async function canScale(canImage){
     await sleep(1000);
@@ -67,22 +68,35 @@ function openCanLid(shift, canImage){
     return 0;
 }
 
-function animate(canImage){
+async function animate(canImage){
     pos = 0;
     posOffsetY = 90;
     posOffsetX = 37;
     angle = 0;
     scale = 1;
 
-    blurAll();
-    disableScroll();
-    openCanLid(-220, canImage);
+
+
+    if (!clicked){
+        clicked = true;
+
+        blurAll();
+        disableScroll();
+        openCanLid(-220, canImage);
+        await sleep(4000);
+        startEffect(4000);
+
+        clicked = false;
+    }
 }
 
 
 $(document).ready(function (){
-    //let canImage = document.getElementsByClassName('product-main__product-image')[0];
+    let canImage = document.getElementsByClassName('product-main__product-image')[0];
 
-    //$(canImage).one('click', () => animate(canImage));
+    //$(canImage).one('click', () => animate());
+    $(canImage).click(function (){
+        animate(canImage);
+    })
 
 })

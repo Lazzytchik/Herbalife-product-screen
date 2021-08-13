@@ -1,3 +1,4 @@
+let chosen = -1;
 
 function ingOnHover(number){
     console.log(number);
@@ -5,6 +6,16 @@ function ingOnHover(number){
     $('.number-'+number+' .ingredients__numbers-item .ingredients__number-image').toggleClass('ingredients__number-image--inverted');
     $('.number-'+number+' .ingredients__numbers-item .ingredients__number').toggleClass('ingredients__number--inverted');
     return 0;
+}
+
+function ingOnClick(number){
+    chosen = number;
+
+    startEffect(4000);
+    $('.ingredients').toggleClass('ingredients--hidden');
+    $('.presentation').toggleClass('presentation--hidden');
+
+    playerInit(videos.get(chosen.toString()));
 }
 
 $(document).ready(function (){
@@ -19,10 +30,16 @@ $(document).ready(function (){
         }, function (){
             ingOnHover(i);
         });
+        $('.ingredients__names-item:nth-child('+i+')').click(function (){
+            ingOnClick(i);
+        });
         $('.number-'+i+' .ingredients__numbers-item').hover(function (){
             ingOnHover(i);
         }, function (){
             ingOnHover(i);
+        });
+        $('.number-'+i+' .ingredients__numbers-item').click(function (){
+            ingOnClick(i);
         });
     }
 })

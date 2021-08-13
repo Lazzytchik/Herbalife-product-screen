@@ -1,14 +1,19 @@
 let player;
 let iframe;
 
+let playerInit;
+
 function onCall(){
     player.playVideo();
-
     playFullscreen();
 }
 
 function onPlayerReady(event) {
-    //onCall();
+    onCall();
+}
+
+function switchVideo(url){
+    player.loadVideoById(url, 0, 60);
 }
 
 function onPlayerStateChange(event) {
@@ -31,11 +36,12 @@ $(document).ready(function (){
 
     iframe = document.getElementById('player');
 
-    function onYouTubeIframeAPIReady(){
+    playerInit = function onYouTubeIframeAPIReady(url){
+        console.log('youtube');
         player = new YT.Player('player', {
             height: '920px',
             width: '100%',
-            videoId: 'rhUSXegw6NY',
+            videoId: url,
             host: 'https://www.youtube.com',
             playerVars: {
                 'autoplay': 0,
@@ -54,7 +60,7 @@ $(document).ready(function (){
 
     window.YT.ready(function() {
         console.log('presentation');
-        onYouTubeIframeAPIReady();
+        //playerInit();
     })
 
 })

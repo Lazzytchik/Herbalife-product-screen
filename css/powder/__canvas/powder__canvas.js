@@ -1,4 +1,3 @@
-let clicked = false;
 let canvas;
 let config;
 let colorPalette;
@@ -11,6 +10,7 @@ let drawParticle;
 let cleanUpArray;
 let initParticles;
 let frame;
+let startEffect;
 
 $(document).ready(function (){
     // Little Canvas things
@@ -152,35 +152,14 @@ $(document).ready(function (){
 
 // First particle explosion
     //initParticles(config.particleNumber);
-    let canImage = document.getElementsByClassName('product-main__product-image')[0];
+    frame();
 
-    $(canImage).one('click', () => bindAction());
-    $(canImage).click(function (){
-        bindAction();
-    })
-
-    async function bindAction(){
-        if (!clicked){
-            clicked = true;
-            animate(canImage);
-
-            await sleep(4000);
-            $(".powder__canvas").toggleClass('powder__canvas--hidden');
-            console.log('jey');
-            frame();
-            initParticles(config.particleNumber);
-
-            //onCall();
-            await sleep(4000);
-            console.log('awaiyed');
-            //playFullscreen();
-
-            $(".powder__canvas").toggleClass('powder__canvas--hidden');
-            cleanUpArray();
-            enableScroll();
-
-            clicked = false;
-        }
-
+    startEffect = async function(time){
+        $(".powder__canvas").toggleClass('powder__canvas--hidden');
+        initParticles(config.particleNumber);
+        await sleep(time);
+        $(".powder__canvas").toggleClass('powder__canvas--hidden');
+        enableScroll();
+        cleanUpArray();
     }
 })
