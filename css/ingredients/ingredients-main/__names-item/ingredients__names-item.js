@@ -8,10 +8,13 @@ function ingOnHover(number){
     return 0;
 }
 
-function ingOnClick(number){
+async function ingOnClick(number){
     chosen = number;
 
+    display();
+    await sleep(10);
     startEffect(4000);
+    await sleep(10);
     $('.ingredients').toggleClass('ingredients--hidden');
     $('.presentation').toggleClass('presentation--hidden');
 

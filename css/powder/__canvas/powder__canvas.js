@@ -11,6 +11,7 @@ let cleanUpArray;
 let initParticles;
 let frame;
 let startEffect;
+let display;
 
 $(document).ready(function (){
     // Little Canvas things
@@ -147,22 +148,24 @@ $(document).ready(function (){
         window.requestAnimFrame(frame);
     };
 
-// First Frame
-    //frame();
-
-// First particle explosion
-    //initParticles(config.particleNumber);
     frame();
 
+    display = function (){
+        $(".powder").toggleClass('powder--hidden');
+    }
+
     startEffect = async function(time){
-        $(".powder").toggleClass('powder--hidden').toggleClass('powder--faded');
+        $(".powder").toggleClass('powder--faded');
         //$(".powder");
         initParticles(config.particleNumber);
 
         await sleep(time);
-        $(".powder").toggleClass('powder--hidden').toggleClass('powder--faded');
+        display();
+        $(".powder").toggleClass('powder--faded');
+
+
         //$(".powder");
         enableScroll();
-        cleanUpArray();
+
     }
 })

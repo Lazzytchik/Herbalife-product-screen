@@ -4,9 +4,11 @@ $(document).ready(function(){
         switchPage();
     })
 
-    function switchPage(){
+    async function switchPage(){
         $('.presentation').toggleClass('presentation--hidden');
-        startEffect(4200);
+        display()
+        await sleep(10)
+        startEffect(4000);
         //$('.page-wrapper').toggleClass('page-wrapper--hidden');
         $('.ingredients').toggleClass('ingredients--hidden');
 

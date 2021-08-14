@@ -38,7 +38,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function openCanLid2(canImage){
+async function openCanLid(canImage){
     let lid = document.getElementsByClassName('product-main__can-lid')[0];
 
     $(lid).toggleClass('product-main__can-lid--hanged');
@@ -49,22 +49,16 @@ async function openCanLid2(canImage){
 }
 
 async function animate(canImage){
-    pos = 0;
-    posOffsetY = 90;
-    posOffsetX = 37;
-    angle = 0;
+
     scale = 1;
-
-
 
     if (!clicked){
         clicked = true;
 
         blurAll();
         disableScroll();
-        //openCanLid(200, canImage);
-        openCanLid2(canImage);
-        await sleep(4000);
+        openCanLid(canImage);
+        await sleep(3800);
         startEffect(4000);
 
         clicked = false;
@@ -77,6 +71,7 @@ $(document).ready(function (){
 
     //$(canImage).one('click', () => animate());
     $(canImage).click(function (){
+        display();
         animate(canImage);
     })
 

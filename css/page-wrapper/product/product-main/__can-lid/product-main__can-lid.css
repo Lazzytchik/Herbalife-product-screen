@@ -4,7 +4,6 @@
 
 .product-main__can-lid--hanged{
     transform: translate(0px, 0px);
-    filter: opacity(0%);
     transition-duration: 1s;
 }
 
