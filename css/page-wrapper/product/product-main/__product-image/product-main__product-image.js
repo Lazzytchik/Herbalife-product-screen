@@ -2,12 +2,9 @@ function blurAll(){
     $(".product").toggleClass('product--blurred');
     $(".product-main > *:not(.product-main__product-image)").toggleClass('blurred');
     $(".links").toggleClass('blurred');
+    $(".page-wrapper").toggleClass('page-wrapper--blurred');
 }
 
-let pos = 0;
-let posOffsetY = 90;
-let posOffsetX = 37;
-let angle = 0;
 let scale = 1;
 let clicked = false;
 
@@ -24,7 +21,7 @@ async function canScale(canImage){
             //enableScroll();
         } else{
             scale += 0.05;
-            canImage.style.transform = trans + 'scale('+scale+','+scale+')'
+            canImage.style.transform = trans + ' scale('+scale+','+scale+')'
         }
     }
 }
@@ -41,31 +38,14 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function openCanLid(shift, canImage){
+async function openCanLid2(canImage){
     let lid = document.getElementsByClassName('product-main__can-lid')[0];
-    let id = setInterval(frame, 10)
 
-    function frame(){
-        if (pos <= posOffsetY + shift){
-            clearInterval(id)
-            let angleId = setInterval(angleFrame, 5);
-
-            async function angleFrame(){
-                if (angle <= -10){
-                    clearInterval(angleId);
-                    await sleep(1000);
-                    moveCan(canImage);
-                }else{
-                    angle--;
-                    lid.style.transform = 'rotate('+angle+'deg) translate(25px, '+ (pos+posOffsetY) +'px)';
-                }
-            }
-        }else{
-            pos--;
-            lid.style.transform = 'translate('+posOffsetX+'px, -'+ (pos+posOffsetY) +'px)';
-        }
-    }
-    return 0;
+    $(lid).toggleClass('product-main__can-lid--hanged');
+    await sleep(1000);
+    $(lid).toggleClass('product-main__can-lid--opened');
+    await sleep(1000);
+    moveCan(canImage);
 }
 
 async function animate(canImage){
@@ -82,7 +62,8 @@ async function animate(canImage){
 
         blurAll();
         disableScroll();
-        openCanLid(-220, canImage);
+        //openCanLid(200, canImage);
+        openCanLid2(canImage);
         await sleep(4000);
         startEffect(4000);
 

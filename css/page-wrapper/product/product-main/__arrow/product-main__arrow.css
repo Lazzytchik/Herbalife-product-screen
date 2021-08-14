@@ -1,5 +1,5 @@
 .product-main__arrow{
-
+    transform: scale(0.8);
 }
 
 .product-main__arrow:hover{

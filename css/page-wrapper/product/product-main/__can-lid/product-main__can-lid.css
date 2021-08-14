@@ -1,6 +1,16 @@
 .product-main__can-lid{
-   transform: translate(37px, 90px);
-   transition-duration: 1s;
+   transform: translate(1px, 60px);
+}
+
+.product-main__can-lid--hanged{
+    transform: translate(0px, 0px);
+    filter: opacity(0%);
+    transition-duration: 1s;
+}
+
+.product-main__can-lid--opened{
+    transform: rotate(-10deg) translate(0px, -40px);
+    transition-duration: 1s;
 }
 
 .product-main__can-lid:hover{
@@ -9,5 +19,5 @@
 }
 
 .product-main__can-lid img{
-    /*width: 200px;*/
+    width: 100%;
 }

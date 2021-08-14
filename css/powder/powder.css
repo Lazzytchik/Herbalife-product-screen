@@ -4,6 +4,20 @@
     top: 0;
     right: 0;
     left: 0;
+    min-height: 100%;
+    height: 100%;
+    width: 1920px;
+
+    margin: auto;
 
     z-index: 30;
+}
+
+.powder--faded{
+    transition-duration: 4s;
+    filter: opacity(0%);
+}
+
+.powder--hidden{
+    display: none;
 }

@@ -23,8 +23,8 @@ $(document).ready(function (){
 
 // Configuration, Play with these
     config = {
-        particleNumber: 2000,
-        maxParticleSize: 40,
+        particleNumber: 1000,
+        maxParticleSize: 80,
         maxSpeed: 8,
         colorVariation: 50
     };
@@ -155,10 +155,13 @@ $(document).ready(function (){
     frame();
 
     startEffect = async function(time){
-        $(".powder__canvas").toggleClass('powder__canvas--hidden');
+        $(".powder").toggleClass('powder--hidden').toggleClass('powder--faded');
+        //$(".powder");
         initParticles(config.particleNumber);
+
         await sleep(time);
-        $(".powder__canvas").toggleClass('powder__canvas--hidden');
+        $(".powder").toggleClass('powder--hidden').toggleClass('powder--faded');
+        //$(".powder");
         enableScroll();
         cleanUpArray();
     }

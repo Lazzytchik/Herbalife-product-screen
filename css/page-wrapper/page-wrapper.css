@@ -1,11 +1,16 @@
 .page-wrapper{
-    background-image: url("../../img/background.png");
+    /*background-image: url("../../img/background.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100%;*/
     width: 100%;
-    height: auto;
+    min-height: 100%;
+    height: 100%;
 }
 
 .page-wrapper--hidden{
     display: none;
+}
+
+.page-wrapper--blurred{
+    backdrop-filter: blur(8px);
 }

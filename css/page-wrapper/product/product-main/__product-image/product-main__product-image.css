@@ -2,6 +2,7 @@
     margin-left: 400px;
     margin-top: 30px;
     transition-duration: 0.3s;
+    width: 500px;
 }
 
 .product-main__product-image:hover{
@@ -13,9 +14,5 @@
 }
 
 .blurred{
-    /*-webkit-filter: blur(4px);
-    -moz-filter: blur(4px);
-    -ms-filter: blur(4px);
-    -o-filter: blur(4px);*/
     filter: blur(4px);
 }
