@@ -2,11 +2,23 @@
     margin-left: 29px;
     margin-top: 30px;
     max-width: 400px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 @media all and (max-width: 1000px){
     .product-main__description{
         max-width: 800px;
-        margin-left: 50px;
+        width: 320px;
+        margin-left: 40px;
+        margin-right: 0;
+        margin-top: 70px;
+    }
+}
+
+@media all and (min-width: 2500px){
+    .product-main__description{
+        max-width: 800px;
     }
 }

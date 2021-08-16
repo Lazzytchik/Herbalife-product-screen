@@ -10,7 +10,7 @@
 
 @media all and (max-width: 1000px) {
     .product-main__arrow{
-        transform: scale(0.6, -0.6) rotate(45deg) translate(-20px, -90px);
+        transform: scale(0.5, -0.5) rotate(45deg) translate(-20%, -130%);
         width: 70px;
     }
 

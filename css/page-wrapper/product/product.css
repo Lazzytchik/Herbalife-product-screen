@@ -7,3 +7,10 @@
 .product--blurred{
     backdrop-filter: blur(8px);
 }
+
+@media all and (min-width: 2000px) {
+    .product{
+        margin: 2% 0 0;
+        max-width: none;
+    }
+}

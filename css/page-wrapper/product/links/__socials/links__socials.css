@@ -4,3 +4,15 @@
     justify-content: space-between;
     width: 300px;
 }
+
+@media all and (max-width: 1000px){
+    .links__socials{
+        width: 200px;
+    }
+}
+
+@media all and (min-width: 2500px){
+    .links__socials{
+        width: 500px;
+    }
+}

@@ -5,3 +5,15 @@
 .links__socials-item img{
     width: 36px;
 }
+
+@media all and (max-width: 1000px){
+    .links__socials-item img{
+        width: 24px;
+    }
+}
+
+@media all and (min-width: 2500px){
+    .links__socials-item img{
+        width: 48px;
+    }
+}

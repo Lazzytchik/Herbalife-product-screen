@@ -4,6 +4,7 @@
     transition-duration: 0.3s;
     min-width: 300px;
     max-width: 300px;
+
 }
 
 .product-main__product-image:hover{
@@ -23,7 +24,15 @@
         margin-left: 0;
         margin-top: 0;
         transition-duration: 0.3s;
-        min-width: 300px;
-        max-width: 300px;
+        min-width: 160px;
+        max-width: 160px;
+        transform: translate(0, -8%);
+    }
+}
+
+@media all and (min-width: 2500px){
+    .product-main__product-image{
+        min-width: 420px;
+        max-width: 420px;
     }
 }

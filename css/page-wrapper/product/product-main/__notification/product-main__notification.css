@@ -11,6 +11,7 @@
 
 @media all and (max-width: 1000px) {
     .product-main__notification{
-        width: 250px;
+        width: 180px;
+        transform: translate(-30%, -15%);
     }
 }

@@ -1,6 +1,5 @@
 .product-main__title{
     margin-left: 100px;
-
     padding-right: 20px;
 }
 
@@ -11,10 +10,19 @@
 @media all and (max-width: 1000px){
     .product-main__title{
         margin-left: 0;
-        width: 300px;
+        margin-right: 0;
+        width: 100%;
     }
 
     .product-main__title h1{
-        font-size: 30px;
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media all and (min-width: 2500px){
+    .product-main__title h1{
+        font-size: 64px;
+        margin-bottom: 0;
     }
 }

@@ -18,6 +18,12 @@
     }
 
     .product-main__comment p{
-        font-size: 18px;
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 2500px){
+    .product-main__comment p{
+        font-size: 28px;
     }
 }
