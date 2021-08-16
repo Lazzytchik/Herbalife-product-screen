@@ -67,3 +67,145 @@
 }
 
 
+@media all and (max-width: 1450px) and (min-width: 1000px) {
+    .number-1{
+        top: 0;
+        left: 0;
+    }
+
+    .number-2{
+        top: -20px;
+        left: 150px;
+    }
+
+    .number-3{
+        top: -30px;
+        left: 300px;
+    }
+
+    .number-4{
+        top: -10px;
+        left: 460px;
+    }
+
+    .number-5{
+        top: 115px;
+        left: 0;
+    }
+
+    .number-6{
+        top: 173px;
+        left: 107px;
+    }
+
+    .number-7{
+        top: 218px;
+        left: 277px;
+    }
+    .number-8{
+        top: 261px;
+        left: 30px;
+    }
+
+    .number-9{
+        top: 364px;
+        left: -18px;
+    }
+    .number-10{
+        top: 410px;
+        left: 94px;
+    }
+
+    .number-11{
+        top: 360px;
+        left: 188px;
+    }
+
+    .number-12{
+        top: 374px;
+        left: 295px;
+    }
+
+    .number-13{
+        top: 327px;
+        left: 379px;
+    }
+
+    .number-14{
+        top: 380px;
+        left: 490px;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .number-1{
+        top: 0;
+        left: 0;
+    }
+
+    .number-2{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-3{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-4{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-5{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-6{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-7{
+        top: 1px;
+        left: 1px;
+    }
+    .number-8{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-9{
+        top: 1px;
+        left: 1px;
+    }
+    .number-10{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-11{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-12{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-13{
+        top: 1px;
+        left: 1px;
+    }
+
+    .number-14{
+        top: 1px;
+        left: 1px;
+    }
+}
+
+
+

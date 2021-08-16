@@ -1,4 +1,5 @@
 .ingredients__number-image{
+
 }
 
 .ingredients__number-image--inverted{
@@ -6,4 +7,10 @@
     cursor: pointer;
     transform: scale(1.2);
     transition-duration: 0.7s;
+}
+
+@media all and (max-width: 1450px) and (min-width: 1000px){
+    .ingredients__number-image{
+        width: 50px;
+    }
 }

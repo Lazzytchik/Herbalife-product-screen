@@ -20,6 +20,13 @@
     }
 }
 
+@media all and (max-width: 1450px) and (min-width: 1000px){
+    .product-main__title h1{
+        font-size: 34px;
+        margin-bottom: 0;
+    }
+}
+
 @media all and (min-width: 2500px){
     .product-main__title h1{
         font-size: 64px;

@@ -1,3 +1,15 @@
 .ingredients__socials-item{
 
 }
+
+@media all and (max-width: 1450px) and (min-width: 1000px){
+    .ingredients__socials-item img{
+        width: 22px;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .ingredients__socials-item img{
+        width: 16px;
+    }
+}

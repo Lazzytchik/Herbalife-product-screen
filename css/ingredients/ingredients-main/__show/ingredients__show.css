@@ -3,8 +3,28 @@
     z-index: 4;
     background-image: url("../../../../img/ingredients.png");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: contain;
 
     width: 1200px;
     height: 900px;
 }
+
+@media all and (max-width: 1450px) and (min-width: 1000px){
+    .ingredients__show{
+        background-image: url("../../../../img/ingredients_1024.png");
+
+        width: 670px;
+        height: auto;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .ingredients__show{
+        background-image: url("../../../../img/ingredients_320.png");
+        width: 320px;
+        height: 320px;
+    }
+
+}
+

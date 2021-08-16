@@ -36,3 +36,10 @@
         max-width: 420px;
     }
 }
+
+@media all and (max-width: 1450px) and (min-width: 1000px) {
+    .product-main__product-image{
+        min-width: 240px;
+        max-width: 240px;
+    }
+}

@@ -1,13 +1,17 @@
 .ingredients__number{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
     margin: 0;
 
-    transform: translate(0, -50px);
+    transform: translate(0, -135%);
 }
 
 .ingredients__number--inverted{
     color: #78BE20;
     cursor: pointer;
+}
+
+@media all and (max-width: 1450px) and (min-width: 1000px){
+
 }

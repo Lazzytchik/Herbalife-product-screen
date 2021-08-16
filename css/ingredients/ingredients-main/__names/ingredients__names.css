@@ -6,3 +6,15 @@
 
     height: 400px;
 }
+
+@media all and (max-width: 1450px) and (min-width: 1000px){
+    .ingredients__names{
+        height: 300px;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .ingredients__names{
+        height: 200px;
+    }
+}

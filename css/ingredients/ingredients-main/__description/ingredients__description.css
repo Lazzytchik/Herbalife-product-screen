@@ -6,3 +6,15 @@
     margin-top: 40px;
     width: 350px;
 }
+
+@media all and (max-width: 1450px) and (min-width: 1000px){
+    .ingredients__description{
+        width: 250px;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .ingredients__description{
+        width: 300px;
+    }
+}

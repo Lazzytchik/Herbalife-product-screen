@@ -1,19 +1,13 @@
 .ingredients{
     max-height: 1080px;
     height: 100%;
-    width: auto;
+    width: 100%;
 
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 
-    background-image: url("../../img/ingredients_background.png");
-
-    background-size: cover;
-    background-origin: border-box;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .ingredients--hidden{

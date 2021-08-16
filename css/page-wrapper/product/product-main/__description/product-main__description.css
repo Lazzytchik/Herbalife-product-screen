@@ -17,6 +17,10 @@
     }
 }
 
+@media all and (max-width: 1450px) and (min-width: 1000px){
+
+}
+
 @media all and (min-width: 2500px){
     .product-main__description{
         max-width: 800px;

@@ -5,3 +5,9 @@
 .ingredients__logo img{
     width: 160px;
 }
+
+@media all and (max-width: 1450px) and (min-width: 1000px){
+    .ingredients__logo img{
+        width: 120px;
+    }
+}

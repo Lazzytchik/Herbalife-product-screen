@@ -22,6 +22,16 @@
     }
 }
 
+@media all and (max-width: 1450px) and (min-width: 1000px){
+    .product-main__comment{
+        padding-right: 90px;
+    }
+
+    .product-main__comment p{
+        font-size: 18px;
+    }
+}
+
 @media all and (min-width: 2500px){
     .product-main__comment p{
         font-size: 28px;

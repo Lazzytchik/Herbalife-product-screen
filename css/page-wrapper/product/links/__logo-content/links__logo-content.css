@@ -11,3 +11,13 @@
         width: 300px;
     }
 }
+
+@media all and (max-width: 1000px) {
+    .links__logo-content{
+        width: 150px;
+    }
+
+    .links__logo-content img{
+        width: 150px;
+    }
+}
