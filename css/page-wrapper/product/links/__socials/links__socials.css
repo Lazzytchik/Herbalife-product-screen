@@ -1,5 +1,6 @@
 .links__socials {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 300px;
 }

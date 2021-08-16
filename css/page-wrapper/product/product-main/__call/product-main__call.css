@@ -1,0 +1,10 @@
+.product-main__call{
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (max-width: 1000px) {
+    .product-main__call{
+        flex-direction: row;
+    }
+}

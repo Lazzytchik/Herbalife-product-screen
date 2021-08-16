@@ -2,9 +2,22 @@
     margin-bottom: 30px;
     margin-left: 100px;
 
-    padding-right: 150px;
+    padding-right: 50px;
+    max-height: 200px;
 }
 
 .product-main__comment p{
-    font-size: 28px;
+    font-size: 22px;
+}
+
+@media all and (max-width: 1000px){
+    .product-main__comment{
+        margin-left: 0;
+        padding-right: 0;
+        width: 200px;
+    }
+
+    .product-main__comment p{
+        font-size: 18px;
+    }
 }

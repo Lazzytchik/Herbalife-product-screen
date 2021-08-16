@@ -1,10 +1,15 @@
 .product-main{
     margin: 0 auto 5px;
-    /*padding-top: 60px;*/
     max-width: 1400px;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+@media all and (max-width: 1000px) {
+    .product-main{
+        flex-direction: column-reverse;
+    }
 }

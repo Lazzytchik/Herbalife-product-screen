@@ -1,4 +1,12 @@
 .product-main__description{
     margin-left: 29px;
     margin-top: 30px;
+    max-width: 400px;
+}
+
+@media all and (max-width: 1000px){
+    .product-main__description{
+        max-width: 800px;
+        margin-left: 50px;
+    }
 }

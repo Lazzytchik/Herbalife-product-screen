@@ -18,6 +18,8 @@ async function canScale(canImage){
             clearInterval(scaleId);
             $('.ingredients').toggleClass('ingredients--hidden');
             $('.page-wrapper').toggleClass('page-wrapper--hidden');
+            $('body').removeClass();
+            $('body').toggleClass('ing-body');
             //enableScroll();
         } else{
             scale += 0.05;

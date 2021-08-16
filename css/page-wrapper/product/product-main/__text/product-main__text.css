@@ -7,3 +7,14 @@
     font-weight: bold;
     font-size: 20px;
 }
+
+@media all and (max-width: 1000px){
+    .product-main__text{
+        min-width: 130px;
+        margin-left: 0;
+    }
+
+    .product-main__text p{
+        font-size: 16px;
+    }
+}

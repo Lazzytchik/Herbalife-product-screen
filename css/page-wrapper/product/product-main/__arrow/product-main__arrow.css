@@ -1,8 +1,20 @@
 .product-main__arrow{
     transform: scale(0.8);
+    width: 100px;
+    margin-right: 20px;
 }
 
-.product-main__arrow:hover{
-    /* transform: scale(1.2, 1.2);
-    transition-duration: 0.3s; */
+.product-main__arrow img{
+    /*width: 100px;*/
+}
+
+@media all and (max-width: 1000px) {
+    .product-main__arrow{
+        transform: scale(0.6, -0.6) rotate(45deg) translate(-20px, -90px);
+        width: 70px;
+    }
+
+    .product-main__arrow img{
+        width: 120px;
+    }
 }
