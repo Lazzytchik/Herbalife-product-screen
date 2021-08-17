@@ -22,10 +22,22 @@
 @media all and (max-width: 1000px){
     .ingredients__show{
         background-image: url("../../../../img/ingredients_320.png");
-        width: 320px;
+        width: 310px;
         height: 320px;
 
-        transform: translate(0,-710px);
+        transform: translate(0,-730px);
+        margin: 0 5px 0 5px;
+    }
+
+}
+
+@media all and (max-width: 300px){
+    .ingredients__show{
+        background-image: url("../../../../img/ingredients_320.png");
+        width: 270px;
+        height: 280px;
+
+        transform: translate(0,-730px);
         margin: 0 5px 0 5px;
     }
 

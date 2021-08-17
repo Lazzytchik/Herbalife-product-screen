@@ -1,3 +1,15 @@
-.presentation__socials-item{
+.presentation__socials-item img{
+    width: 30px;
+}
 
+@media all and (max-width: 900px){
+    .presentation__socials-item img{
+        width: 20px;
+    }
+}
+
+@media all and (min-width: 2000px){
+    .presentation__socials-item img{
+        width: 50px;
+    }
 }

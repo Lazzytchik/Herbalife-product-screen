@@ -37,3 +37,9 @@
         font-size: 28px;
     }
 }
+
+@media all and (max-width: 300px) {
+    .product-main__comment p{
+        font-size: 10px;
+    }
+}

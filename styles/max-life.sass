@@ -33,6 +33,7 @@
 @import "../css/ingredients/ingredients-main/__numbers-item/ingredients__numbers-item.css"
 @import "../css/ingredients/ingredients-main/__arrow/ingredients__arrow.css"
 @import "../css/presentation/presentation.css"
+@import "../css/presentation/presentation-main/presentation-main.css"
 @import "../css/presentation/presentation-main/__socials/presentation__socials.css"
 @import "../css/presentation/presentation-main/__socials-item/presentation__socials-item.css"
 @import "../css/presentation/presentation-main/__navigation/presentation__navigation.css"
@@ -64,12 +65,20 @@ body
   min-height: 100%
   height: 100%
 
-@media all and (max-width: 1000px)
-  body
-    background-position-x: 32%
 
 .product-body
   background-image: url("../img/background.png")
 
 .ing-body
   background-image: url("../img/ingredients_background.png")
+
+@media all and (max-width: 1000px)
+  body
+    background-position-x: 36%
+
+@media all and (max-width: 430px)
+  body
+    background-position-y: 70%
+
+  .product-body
+    background-image: url("../img/product_background_320.png")

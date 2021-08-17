@@ -7,3 +7,17 @@
     align-items: center;
     width: 500px;
 }
+
+@media all and (max-width: 900px) {
+    .presentation__socials{
+        margin: 40px auto 0;
+        width: 250px;
+    }
+}
+
+@media all and (min-width: 2000px){
+    .presentation__socials{
+        margin: 120px auto 0;
+        width: 750px;
+    }
+}

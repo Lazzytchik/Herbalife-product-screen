@@ -16,3 +16,26 @@
     font-size: 50px;
     margin-top: 10px;
 }
+
+@media all and (max-width: 900px) {
+    .presentation__to-ingredients{
+        width: 80%;
+        margin: 200px auto 0;
+    }
+
+    .presentation__to-ingredients h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media all and (min-width: 2000px) {
+    .presentation__to-ingredients{
+        width: 100%;
+    }
+
+    .presentation__to-ingredients h2{
+        font-size: 70px;
+        margin-top: 20px;
+    }
+}

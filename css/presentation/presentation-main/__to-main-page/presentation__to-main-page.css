@@ -19,3 +19,21 @@
 .presentation__to-main-page h3{
     font-size: 24px;
 }
+
+@media all and (max-width: 900px){
+    .presentation__to-main-page{
+        margin-top: 50px;
+    }
+    .presentation__to-main-page h3{
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 2000px) {
+    .presentation__to-main-page{
+        margin-top: 300px;
+    }
+    .presentation__to-main-page h3{
+        font-size: 36px;
+    }
+}

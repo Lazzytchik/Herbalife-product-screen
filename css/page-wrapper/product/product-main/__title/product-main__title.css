@@ -33,3 +33,9 @@
         margin-bottom: 0;
     }
 }
+
+@media all and (max-width: 300px) {
+    .product-main__title h1{
+        font-size: 18px;
+    }
+}

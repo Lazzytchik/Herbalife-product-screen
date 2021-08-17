@@ -39,7 +39,7 @@ $(document).ready(function (){
     playerInit = function onYouTubeIframeAPIReady(url){
         console.log('youtube');
         player = new YT.Player('player', {
-            height: '920px',
+            height: '100%',
             width: '100%',
             videoId: url,
             host: 'https://www.youtube.com',

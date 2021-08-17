@@ -29,3 +29,15 @@
         width: 100px;
     }
 }
+
+@media all and (max-width: 300px){
+    .ingredients__arrow{
+        width: 1px;
+        transform: translate(-25px, -25px) scale(1, -1) rotate(-110deg);
+
+    }
+
+    .ingredients__hint img{
+        width: 100px;
+    }
+}
