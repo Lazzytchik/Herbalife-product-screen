@@ -14,3 +14,9 @@
         width: 50px;
     }
 }
+
+@media all and (max-width: 1000px) {
+    .ingredients__number-image{
+        width: 24px;
+    }
+}

@@ -13,3 +13,11 @@
     }
 
 }
+
+@media all and (max-width: 1450px){
+    .ingredients__hint-text{
+        font-size: 18px;
+        width: 250px;
+        margin-left: 5px;
+    }
+}

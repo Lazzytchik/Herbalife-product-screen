@@ -13,3 +13,9 @@
 .ingredients--hidden{
     display: none;
 }
+
+@media all and (max-width: 1000px) {
+    .ingredients{
+        align-items: flex-start;
+    }
+}

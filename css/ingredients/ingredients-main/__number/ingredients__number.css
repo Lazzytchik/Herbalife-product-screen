@@ -4,7 +4,7 @@
     font-weight: bold;
     margin: 0;
 
-    transform: translate(0, -135%);
+    transform: translate(0, -150%);
 }
 
 .ingredients__number--inverted{
@@ -13,5 +13,14 @@
 }
 
 @media all and (max-width: 1450px) and (min-width: 1000px){
+    .ingredients__number{
+        transform: translate(0, -130%);
+    }
+}
 
+@media all and (max-width: 1000px) {
+    .ingredients__number{
+        font-size: 14px;
+        transform: translate(0, -115%);
+    }
 }

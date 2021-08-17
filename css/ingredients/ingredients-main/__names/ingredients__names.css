@@ -15,6 +15,6 @@
 
 @media all and (max-width: 1000px){
     .ingredients__names{
-        height: 200px;
+        height: 400px;
     }
 }

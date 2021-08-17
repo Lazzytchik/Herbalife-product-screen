@@ -11,3 +11,13 @@
         width: 120px;
     }
 }
+
+@media all and (max-width: 1000px){
+    .ingredients__logo{
+        margin-left: 5px;
+    }
+
+    .ingredients__logo img{
+        width: 130px;
+    }
+}

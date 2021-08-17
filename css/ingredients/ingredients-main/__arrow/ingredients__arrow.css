@@ -1,0 +1,31 @@
+.ingredients__arrow{
+    transform: translate(-60px, 37px);
+}
+
+.ingredients__hint img{
+
+}
+
+@media all and (max-width: 1450px) and (min-width: 1000px){
+
+    .ingredients__arrow{
+        transform: translate(-70px, 32px);
+        width: 1px;
+    }
+
+    .ingredients__arrow img{
+        width: 100px;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .ingredients__arrow{
+        width: 1px;
+        transform: translate(1px, -25px) scale(1, -1) rotate(-110deg);
+
+    }
+
+    .ingredients__hint img{
+        width: 100px;
+    }
+}

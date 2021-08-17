@@ -16,5 +16,6 @@
 @media all and (max-width: 1000px){
     .ingredients__description{
         width: 300px;
+        margin: 40px auto 0;
     }
 }

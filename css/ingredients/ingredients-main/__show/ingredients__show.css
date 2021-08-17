@@ -24,6 +24,9 @@
         background-image: url("../../../../img/ingredients_320.png");
         width: 320px;
         height: 320px;
+
+        transform: translate(0,-710px);
+        margin: 0 5px 0 5px;
     }
 
 }
