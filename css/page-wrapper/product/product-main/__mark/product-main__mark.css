@@ -1,0 +1,15 @@
+.product-main__mark{
+    width: 100px;
+    margin-left: 100px;
+}
+
+.product-main__mark img{
+    width: 100%;
+}
+
+@media all and (max-width: 1000px) {
+    .product-main__mark{
+        width: 60px;
+        margin-left: 0px;
+    }
+}

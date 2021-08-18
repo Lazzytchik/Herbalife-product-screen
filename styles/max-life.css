@@ -11,6 +11,7 @@
 @import url(../css/page-wrapper/product/product-main/__comment/product-main__comment.css);
 @import url(../css/page-wrapper/product/product-main/__title/product-main__title.css);
 @import url(../css/page-wrapper/product/product-main/__call/product-main__call.css);
+@import url(../css/page-wrapper/product/product-main/__mark/product-main__mark.css);
 @import url(../css/page-wrapper/product/links/links.css);
 @import url(../css/page-wrapper/product/links/__socials-item/links__socials-item.css);
 @import url(../css/page-wrapper/product/links/__socials/links__socials.css);
@@ -44,6 +45,7 @@
 @import url(../css/presentation/presentation-main/__back/presentation__back.css);
 @import url(../css/presentation/presentation-main/__back-title/presentation__back-title.css);
 @import url(../css/ingredients/ingredients-main/__number/ingredients__number.css);
+@import url(../css/presentation/presentation-main/__menu-main/presentation__menu-main.css);
 @import url(../css/ingredients/ingredients-main/__number-image/ingredients__number-image.css);
 @import url(../css/ingredients/ingredients-main/__numbers-container/numbers/numbers.css);
 @import url(../css/ingredients/ingredients-main/__numbers-container/ingredients__numbers-container.css);
@@ -56,27 +58,7 @@ html {
 
 body {
   margin: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: top;
   min-height: 100%;
   height: 100%; }
-
-.product-body {
-  background-image: url("../img/background.png"); }
-
-.ing-body {
-  background-image: url("../img/ingredients_background.png"); }
-
-@media all and (max-width: 1000px) {
-  body {
-    background-position-x: 36%; } }
-@media all and (max-width: 430px) {
-  body {
-    background-position-y: 70%; }
-
-  .product-body {
-    background-image: url("../img/product_background_320.png"); } }
 
 /*# sourceMappingURL=max-life.css.map */

@@ -13,3 +13,9 @@
         flex-direction: column-reverse;
     }
 }
+
+@media all and (max-width: 1400px) and (min-width: 1000px) and (max-aspect-ratio: 5/6) {
+    .product-main{
+        margin-top: 200px;
+    }
+}

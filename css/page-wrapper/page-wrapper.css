@@ -1,7 +1,7 @@
 .page-wrapper{
-    /*background-image: url("../../img/background.png");
+    background-image: url("../../img/background.png");
     background-repeat: no-repeat;
-    background-size: 100%;*/
+    background-size: cover;
     width: 100%;
     min-height: 100%;
     height: 100%;
@@ -18,8 +18,32 @@
     backdrop-filter: blur(8px);
 }
 
+@media all and (max-width: 1400px) and (min-width: 1000px){
+    .page-wrapper{
+        background-position-x: 40%;
+        background-position-y: center;
+    }
+}
+
+
 @media all and (max-width: 1000px){
     .page-wrapper{
         overflow-y: auto;
+    }
+}
+
+@media all and (max-width: 1000px){
+    .page-wrapper{
+        background-position-x: 36%;
+    }
+}
+
+
+@media all and (max-width: 900px){
+    .page-wrapper{
+        background-position-y: top;
+        background-attachment: local;
+        background-size: 100%;
+        background-image: url("../../img/product_background_320.png");
     }
 }

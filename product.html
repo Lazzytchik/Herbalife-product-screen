@@ -14,7 +14,7 @@
     <script src="css/presentation/presentation-main/__video/presentation__video.js"></script>
     <script src="css/ingredients/ingredients-main/__names-item/ingredients__names-item.js"></script>
 </head>
-<body class="product-body">
+<body>
     <div class="page-wrapper">
         <div class="product">
             <div class="product-main">
@@ -27,6 +27,9 @@
                     </div>
                 </div>
                 <div class="product-main__description">
+                    <div class="product-main__mark">
+                        <img src="img/mark.png" alt="Новинка">
+                    </div>
                     <div class="product-main__title">
                         <h1>Что такое<br> ГРИН МАКС Select?</h1>
                     </div>
@@ -260,42 +263,44 @@
                 <div id="player"></div>
             </div>
             <div class="presentation__popup-menu presentation__popup-menu--hidden">
-                <div class="presentation__navigation">
-                    <div class="presentation__to-ingredients">
-                        <div class="presentation__repeat">
-                            <img src="img/repeat.png" alt="Вернуться к ингридиентам">
+                <div class="presentation__menu-main">
+                    <div class="presentation__navigation">
+                        <div class="presentation__to-ingredients">
+                            <div class="presentation__repeat">
+                                <img src="img/repeat.png" alt="Вернуться к ингридиентам">
+                            </div>
+                            <div class="presentation__repeat-title">
+                                <h2>К ИНГРЕДИЕНТАМ</h2>
+                            </div>
                         </div>
-                        <div class="presentation__repeat-title">
-                            <h2>К ИНГРЕДИЕНТАМ</h2>
+                        <div class="presentation__to-main-page">
+                            <div class="presentation__back">
+                                <img src="img/back.png" alt="Вернуться на главную">
+                            </div>
+                            <div class="presentation__back-title">
+                                <a href="https://herbalifeacademy.ru" class="link">
+                                    <h3>Вернуться на Гербаленд</h3>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="presentation__to-main-page">
-                        <div class="presentation__back">
-                            <img src="img/back.png" alt="Вернуться на главную">
-                        </div>
-                        <div class="presentation__back-title">
-                            <a href="https://herbalifeacademy.ru" class="link">
-                                <h3>Вернуться на Гербаленд</h3>
-                            </a>
-                        </div>
+                    <div class="presentation__socials">
+                        <a href="" class="presentation__socials-item">
+                            <img src="img/share.png" alt="Поделиться">
+                        </a>
+                        <a href="http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=TITLE&p%5Bsummary%5D=DESC&p%5Burl%5D=URL&p%5Bimages%5D%5B0%5D=IMG_PATH" target="_blank" onclick="return Share.me(this);" class="presentation__socials-item">
+                            <img src="img/socials/white/Facebook_white.png" alt="Поделиться через Фейсбук">
+                        </a>
+                        <a href="http://vk.com/share.php?url=URL&title=TITLE&description=DESC&image=IMG_PATH&noparse=true" target="_blank" onclick="return Share.me(this);" class="presentation__socials-item">
+                            <img src="img/socials/white/VK_white.png" alt="Поделиться через Вконтакте">
+                        </a>
+                        <a href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st.comments=DESC&st._surl=URL" target="_blank" onclick="return Share.me(this);" class="presentation__socials-item">
+                            <img src="img/socials/white/OK_white.png" alt="Поделиться через Одноклассники">
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=TITLE&url=URL" target="_blank" onclick="return Share.me(this)" class="presentation__socials-item">
+                            <img src="img/socials/white/Twitter_white.png" alt="Поделиться через Твиттер">
+                        </a>
                     </div>
-                </div>
-                <div class="presentation__socials">
-                    <a href="" class="presentation__socials-item">
-                        <img src="img/share.png" alt="Поделиться">
-                    </a>
-                    <a href="http://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=TITLE&p%5Bsummary%5D=DESC&p%5Burl%5D=URL&p%5Bimages%5D%5B0%5D=IMG_PATH" target="_blank" onclick="return Share.me(this);" class="presentation__socials-item">
-                        <img src="img/socials/white/Facebook_white.png" alt="Поделиться через Фейсбук">
-                    </a>
-                    <a href="http://vk.com/share.php?url=URL&title=TITLE&description=DESC&image=IMG_PATH&noparse=true" target="_blank" onclick="return Share.me(this);" class="presentation__socials-item">
-                        <img src="img/socials/white/VK_white.png" alt="Поделиться через Вконтакте">
-                    </a>
-                    <a href="http://www.odnoklassniki.ru/dk?st.cmd=addShare&st.s=1&st.comments=DESC&st._surl=URL" target="_blank" onclick="return Share.me(this);" class="presentation__socials-item">
-                        <img src="img/socials/white/OK_white.png" alt="Поделиться через Одноклассники">
-                    </a>
-                    <a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Ffiddle.jshell.net%2F_display%2F&text=TITLE&url=URL" target="_blank" onclick="return Share.me(this)" class="presentation__socials-item">
-                        <img src="img/socials/white/Twitter_white.png" alt="Поделиться через Твиттер">
-                    </a>
                 </div>
             </div>
         </div>

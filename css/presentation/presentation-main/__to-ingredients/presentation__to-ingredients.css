@@ -1,6 +1,6 @@
 .presentation__to-ingredients{
     color: white;
-    margin: 300px auto 0;
+    margin: 0 auto 0;
     width: 700px;
     transition-duration: 0.3s;
 }
@@ -20,11 +20,34 @@
 @media all and (max-width: 900px) {
     .presentation__to-ingredients{
         width: 80%;
-        margin: 200px auto 0;
     }
 
     .presentation__to-ingredients h2{
         font-size: 20px;
+        margin-top: 10px;
+    }
+
+    @media all and (min-aspect-ratio: 6/5){
+        .presentation__to-ingredients{
+            width: 80%;
+        }
+
+        .presentation__to-ingredients h2{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@media all and (min-width: 900px) and (max-width: 1500px){
+    .presentation__to-ingredients{
+        color: white;
+        width: 500px;
+        transition-duration: 0.3s;
+    }
+
+    .presentation__to-ingredients h2{
+        font-size: 35px;
         margin-top: 10px;
     }
 }

@@ -4,7 +4,8 @@
     transition-duration: 0.3s;
     min-width: 300px;
     max-width: 300px;
-
+    position: relative;
+    z-index: 300;
 }
 
 .product-main__product-image:hover{
@@ -27,6 +28,17 @@
         min-width: 160px;
         max-width: 160px;
         transform: translate(0, -8%);
+    }
+
+    @media all and (max-aspect-ratio: 5/6) and (min-width: 600px) {
+        .product-main__product-image{
+            margin-left: 0;
+            margin-top: 0;
+            transition-duration: 0.3s;
+            min-width: 260px;
+            max-width: 260px;
+            transform: translate(0, -8%);
+        }
     }
 }
 
